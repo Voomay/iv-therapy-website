@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#072c58">
+<meta name="description" content="Complete catalog of all practice images, team portraits, logos, and icons for Dr. Michael Le Roux.">
+<title>Image Library | Dr. Michael Le Roux</title>
+<link rel="stylesheet" href="assets/fonts.css"><link rel="stylesheet" href="style.css">
+<style>
+  .catalog-section {
+    padding: 3.5rem 0;
+    border-bottom: 1px solid rgba(7, 44, 88, 0.08);
+  }
+  .catalog-header {
+    margin-bottom: 2rem;
+  }
+  .catalog-header h2 {
+    font-size: clamp(1.45rem, 2.4vw, 2rem);
+    color: #072c58;
+    margin: 0 0 0.45rem;
+  }
+  .catalog-header p {
+    color: #4f647d;
+    font-size: 1rem;
+    margin: 0;
+  }
+  .catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .catalog-card {
+    background: #ffffff;
+    border: 1px solid rgba(7, 44, 88, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(7, 44, 88, 0.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .catalog-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(7, 44, 88, 0.12);
+  }
+  .catalog-thumb {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    background: #f2f7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(7, 44, 88, 0.07);
+  }
+  .catalog-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  .catalog-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #072c58;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.32rem 0.8rem;
+    border-radius: 999px;
+    box-shadow: 0 4px 12px rgba(7, 44, 88, 0.28);
+    letter-spacing: 0.03em;
+  }
+  .catalog-badge.curr {
+    background: #2298a8;
+  }
+  .catalog-body {
+    padding: 1.15rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    flex: 1;
+  }
+  .catalog-title {
+    font-weight: 700;
+    font-size: 1.02rem;
+    color: #072c58;
+    margin: 0;
+  }
+  .catalog-desc {
+    font-size: 0.88rem;
+    color: #4f647d;
+    margin: 0;
+    line-height: 1.45;
+  }
+  .catalog-file {
+    margin-top: auto;
+    padding-top: 0.65rem;
+    font-family: monospace;
+    font-size: 0.78rem;
+    color: #2298a8;
+    word-break: break-all;
+  }
+</style>
+</head>
+<body>
+<svg class="svg-library" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="calendar" viewBox="0 0 448 512"><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z"/></symbol><symbol id="phone" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></symbol><symbol id="pin" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></symbol><symbol id="clock" viewBox="0 0 512 512"><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></symbol><symbol id="mail" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></symbol><symbol id="arrow" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></symbol><symbol id="instagram" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 11.7-29.5 9-99.5 9-132.1s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol><symbol id="facebook" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></symbol><symbol id="whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></symbol><symbol id="stethoscope" viewBox="0 0 576 512"><path d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1 96 192c0 53 43 96 96 96s96-43 96-96l0-120.9-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1L352 192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112l0-70.7c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3l0 70.7c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192L32 71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></symbol><symbol id="menu" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></symbol><symbol id="close" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 12.5 32.8 0 45.3s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></symbol></defs></svg>
+
+<div class="page" id="home">
+  <header class="header wrap">
+    <a class="logo" href="index.html" aria-label="Dr. Michael Le Roux — Family Medicine Specialist"><img class="logo-img" src="assets/logo.png" alt="Dr. Michael Le Roux — Family Medicine Specialist (Practice No.: 1202529 · MP No.: 0753840)" width="1024" height="433"></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><svg aria-hidden="true"><use href="#menu"/></svg></button>
+    <nav id="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="team.html">Our Team</a><a href="services.html">Services</a><a href="blog.html">Care Blog</a><a href="index.html#reviews">Testimonials</a><a href="contact.html">Contact Us</a></nav>
+    <div class="header-actions">
+      <button class="button header-book" data-book><svg><use href="#calendar"/></svg>Book an Appointment <span>⟩</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap page-hero-inner">
+        <p class="eyebrow">ASSET REFERENCE CATALOG</p>
+        <h1>Website Image Library</h1>
+        <p class="page-hero-lead">Every image from your previous website (plus cropped individual portraits and current site placeholders) is numbered below. Simply tell us the Image ID (for example, <strong>IMG-01</strong> or <strong>IMG-18</strong>) and where you would like it placed.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 1: DR LE ROUX, PRACTICE & CONSULTATION ROOM PHOTOS -->
+    <section class="catalog-section">
+      <div class="wrap">
+        <div class="catalog-header">
+          <h2>1. Dr. Michael Le Roux, Practice &amp; Consultation Room Photos</h2>
+          <p>Authentic photos of Dr. Le Roux, the 21 Langverwacht Road building exterior, waiting room, and examination room.</p>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-01</span>
+              <img src="assets/old-site/Michael-2026.png" alt="IMG-01 Dr Michael Le Roux at Desk 2026">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-01 · Dr. Le Roux at Desk (Close-Up)</h3>
+              <p class="catalog-desc">Dr. Michael Le Roux smiling at consultation desk with laptop and framed certificates behind him.</p>
+              <div class="catalog-file">assets/old-site/Michael-2026.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-02</span>
+              <img src="assets/old-site/WhatsApp-Image-2026-05-11-at-13.31.01.jpeg" alt="IMG-02 Dr Le Roux Consultation Room Vertical">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-02 · Dr. Le Roux &amp; Office (Full Vertical)</h3>
+              <p class="catalog-desc">Wide vertical shot showing Dr. Le Roux at his desk, white patient chairs in foreground, and 6 certificates on navy wall.</p>
+              <div class="catalog-file">assets/old-site/WhatsApp-Image-2026-05-11-at-13.31.01.jpeg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-03</span>
+              <img src="assets/old-site/WhatsApp-Image-2026-04-24-at-13.28.08.jpeg" alt="IMG-03 Kuils River Practice Exterior Building">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-03 · Practice Building Exterior (21 Langverwacht Rd)</h3>
+              <p class="catalog-desc">Exterior photo of the practice building with large "DR MICHAEL LE ROUX" signage on the front wall and parking bays.</p>
+              <div class="catalog-file">assets/old-site/WhatsApp-Image-2026-04-24-at-13.28.08.jpeg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-04</span>
+              <img src="assets/old-site/WhatsApp-Image-2023-06-14-at-11.13.26.jpeg" alt="IMG-04 Dr Le Roux Portrait Black Scrubs">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-04 · Dr. Le Roux Portrait (Black Scrubs)</h3>
+              <p class="catalog-desc">Head-and-shoulders portrait of Dr. Michael Le Roux in embroidered black scrubs with blue stethoscope.</p>
+              <div class="catalog-file">assets/old-site/WhatsApp-Image-2023-06-14-at-11.13.26.jpeg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-05</span>
+              <img src="assets/old-site/WhatsApp-Image-2023-06-14-at-11.13.27-1.jpeg" alt="IMG-05 Dr Le Roux Portrait Blue Shirt">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-05 · Dr. Le Roux Portrait (Light-Blue Shirt)</h3>
+              <p class="catalog-desc">Head-and-shoulders portrait of Dr. Michael Le Roux wearing a light-blue collared shirt with stethoscope.</p>
+              <div class="catalog-file">assets/old-site/WhatsApp-Image-2023-06-14-at-11.13.27-1.jpeg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-06</span>
+              <img src="assets/old-site/WhatsApp-Image-2023-06-14-at-11.13.27.jpeg" alt="IMG-06 Dr Le Roux at Desk Puffer Jacket">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-06 · Dr. Le Roux at Desk (Scrubs &amp; Jacket)</h3>
+              <p class="catalog-desc">Close-up of Dr. Le Roux seated at his desk with stethoscope and framed family photo.</p>
+              <div class="catalog-file">assets/old-site/WhatsApp-Image-2023-06-14-at-11.13.27.jpeg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-07</span>
+              <img src="assets/old-site/WhatsApp-Image-2023-06-18-at-19.28.08-3.jpeg" alt="IMG-07 Dr Le Roux Writing Notes in Blue Scrubs">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-07 · Dr. Le Roux Writing Clinical Notes</h3>
+              <p class="catalog-desc">Dr. Michael Le Roux in bright blue scrubs writing notes at his consultation desk.</p>
+              <div class="catalog-file">assets/old-site/WhatsApp-Image-2023-06-18-at-19.28.08-3.jpeg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-08</span>
+              <img src="assets/old-site/WhatsApp-Image-2023-06-18-at-19.28.08-4.jpeg" alt="IMG-08 Dr Le Roux Wide Consultation Room">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-08 · Dr. Le Roux in Consultation Room (Wide)</h3>
+              <p class="catalog-desc">Wide shot of Dr. Le Roux smiling at his desk with patient chairs and examination bed visible.</p>
+              <div class="catalog-file">assets/old-site/WhatsApp-Image-2023-06-18-at-19.28.08-4.jpeg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-09</span>
+              <img src="assets/old-site/WhatsApp-Image-2023-06-18-at-19.28.08-5.jpeg" alt="IMG-09 Dr Le Roux Examining Patient Ear">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-09 · Dr. Le Roux Examining a Patient</h3>
+              <p class="catalog-desc">Action shot of Dr. Le Roux performing an ear examination (otoscopy) on a patient on the exam couch.</p>
+              <div class="catalog-file">assets/old-site/WhatsApp-Image-2023-06-18-at-19.28.08-5.jpeg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-10</span>
+              <img src="assets/old-site/WhatsApp-Image-2023-06-14-at-11.13.27-2.jpeg" alt="IMG-10 Consultation and Exam Room Interior">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-10 · Consultation &amp; Examination Room</h3>
+              <p class="catalog-desc">Clean interior view of the consultation desk, white patient chairs, certificates, and navy examination bed.</p>
+              <div class="catalog-file">assets/old-site/WhatsApp-Image-2023-06-14-at-11.13.27-2.jpeg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-11</span>
+              <img src="assets/old-site/WhatsApp-Image-2023-06-14-at-11.13.27-3.jpeg" alt="IMG-11 Practice Waiting Room and Entrance Mat">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-11 · Waiting Area &amp; Branded Entrance Mat</h3>
+              <p class="catalog-desc">Practice entrance and waiting chairs with the "Dr. Michael Le Roux" branded welcome mat.</p>
+              <div class="catalog-file">assets/old-site/WhatsApp-Image-2023-06-14-at-11.13.27-3.jpeg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-12</span>
+              <img src="assets/old-site/342993040_520278426777824_7098556607893217619_n-1.jpg" alt="IMG-12 Dr Le Roux Standing at Practice Entrance">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-12 · Dr. Le Roux Standing at Entrance</h3>
+              <p class="catalog-desc">Dr. Le Roux in blue scrubs standing with arms crossed in front of the practice entrance sign.</p>
+              <div class="catalog-file">assets/old-site/342993040_520278426777824_7098556607893217619_n-1.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-13</span>
+              <img src="assets/old-site/Untitled-design-34-1.png" alt="IMG-13 Practice Collage Graphic">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-13 · Practice Room &amp; Doctor Collage</h3>
+              <p class="catalog-desc">Composite graphic from the old About section showing the exam bed and Dr. Le Roux at the entrance.</p>
+              <div class="catalog-file">assets/old-site/Untitled-design-34-1.png</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TEAM BANNERS & INDIVIDUAL CROPPED PORTRAITS -->
+    <section class="catalog-section">
+      <div class="wrap">
+        <div class="catalog-header">
+          <h2>2. Team Banners &amp; Individual Staff Portraits</h2>
+          <p>Includes the full team banners from the old website as well as high-resolution individual portraits cropped for the Team cards.</p>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-14</span>
+              <img src="assets/old-site/Staff-pics-3.png" alt="IMG-14 Meet Our Team Full Banner">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-14 · Full "Meet Our Team" Banner (All 7 Staff)</h3>
+              <p class="catalog-desc">Full composite banner showing Dr Le Roux, Dr Abels, Dr Smith, Jenna-Lee, Megan, Evaline, and Marion.</p>
+              <div class="catalog-file">assets/old-site/Staff-pics-3.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-15</span>
+              <img src="assets/old-site/Your-Family-Our-Priority.png" alt="IMG-15 Your Family Our Priority Banner with 3 Doctors">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-15 · "Your Family. Our Priority." (3 Doctors Banner)</h3>
+              <p class="catalog-desc">Wide banner featuring Dr. Rhiyaan Smith, Dr. Michael Le Roux, and Dr. Mandy Abels in blue scrubs.</p>
+              <div class="catalog-file">assets/old-site/Your-Family-Our-Priority.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-16</span>
+              <img src="assets/old-site/doctors-trio-cutout.png" alt="IMG-16 Three Doctors Group Photo Cutout">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-16 · Three Doctors Group Cutout (Dr Smith, Dr Le Roux, Dr Abels)</h3>
+              <p class="catalog-desc">Cropped studio group shot of the three doctors from the priority banner.</p>
+              <div class="catalog-file">assets/old-site/doctors-trio-cutout.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-17</span>
+              <img src="assets/old-site/family_healthcare_banner.jpg" alt="IMG-17 Your Family Our Priority Family Banner">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-17 · "Your Family. Our Priority." (Family Banner)</h3>
+              <p class="catalog-desc">Wide banner with doctor consulting a family of four.</p>
+              <div class="catalog-file">assets/old-site/family_healthcare_banner.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-18</span>
+              <img src="assets/old-site/staff-crop-1-dr-le-roux.png" alt="IMG-18 Dr Michael Le Roux Circular Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-18 · Dr. Michael Le Roux (Individual Team Portrait)</h3>
+              <p class="catalog-desc">Cropped circular portrait of Dr. Michael Le Roux (Family Medicine Specialist).</p>
+              <div class="catalog-file">assets/old-site/staff-crop-1-dr-le-roux.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-19</span>
+              <img src="assets/old-site/staff-crop-2-dr-abels.png" alt="IMG-19 Dr Mandy Abels Circular Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-19 · Dr. Mandy Abels (Individual Team Portrait)</h3>
+              <p class="catalog-desc">Cropped circular portrait of Dr. Mandy Abels (General Practitioner).</p>
+              <div class="catalog-file">assets/old-site/staff-crop-2-dr-abels.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-20</span>
+              <img src="assets/old-site/staff-crop-3-dr-smith.png" alt="IMG-20 Dr Rhiyaan Smith Circular Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-20 · Dr. Rhiyaan Smith (Individual Team Portrait)</h3>
+              <p class="catalog-desc">Cropped circular portrait of Dr. Rhiyaan Smith (General Practitioner).</p>
+              <div class="catalog-file">assets/old-site/staff-crop-3-dr-smith.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-21</span>
+              <img src="assets/old-site/staff-crop-4-jenna-lee.png" alt="IMG-21 Jenna-Lee Circular Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-21 · Jenna-Lee (Practice Manager / Accounts)</h3>
+              <p class="catalog-desc">Cropped circular portrait of Jenna-Lee.</p>
+              <div class="catalog-file">assets/old-site/staff-crop-4-jenna-lee.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-22</span>
+              <img src="assets/old-site/staff-crop-5-megan.png" alt="IMG-22 Megan Circular Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-22 · Megan (Receptionist)</h3>
+              <p class="catalog-desc">Cropped circular portrait of Megan.</p>
+              <div class="catalog-file">assets/old-site/staff-crop-5-megan.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-23</span>
+              <img src="assets/old-site/staff-crop-6-evaline.png" alt="IMG-23 Evaline Circular Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-23 · Evaline (Practice Assistant)</h3>
+              <p class="catalog-desc">Cropped circular portrait of Evaline.</p>
+              <div class="catalog-file">assets/old-site/staff-crop-6-evaline.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-24</span>
+              <img src="assets/old-site/staff-crop-7-marion.png" alt="IMG-24 Marion Circular Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-24 · Marion (House Keeping)</h3>
+              <p class="catalog-desc">Cropped circular portrait of Marion.</p>
+              <div class="catalog-file">assets/old-site/staff-crop-7-marion.png</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: LOGOS, BANNERS & SERVICE ICONS FROM OLD WEBSITE -->
+    <section class="catalog-section">
+      <div class="wrap">
+        <div class="catalog-header">
+          <h2>3. Logos, Service Icons &amp; Section Backgrounds (Old Website)</h2>
+          <p>Brand logos, medical icons, and background banners from drmichaelleroux.co.za.</p>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-25</span>
+              <img src="assets/old-site/practice_logo.png" alt="IMG-25 Practice Logo Full">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-25 · Practice Logo (Horizontal)</h3>
+              <p class="catalog-desc">Official Dr. Michael Le Roux Family Medicine Specialist logo from old header.</p>
+              <div class="catalog-file">assets/old-site/practice_logo.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-26</span>
+              <img src="assets/old-site/Artboard-1.svg" alt="IMG-26 Practice Logo SVG Vector">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-26 · Practice Logo (Scalable SVG Vector)</h3>
+              <p class="catalog-desc">Crisp vector SVG version of the practice logo.</p>
+              <div class="catalog-file">assets/old-site/Artboard-1.svg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-27</span>
+              <img src="assets/old-site/Asset-1@144x.png" alt="IMG-27 High-Res Caduceus Emblem">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-27 · High-Res Caduceus Emblem</h3>
+              <p class="catalog-desc">High-resolution medical caduceus icon (@144x).</p>
+              <div class="catalog-file">assets/old-site/Asset-1@144x.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-28</span>
+              <img src="assets/old-site/Black-Dark-Blue-White-Modern-Futuristic-Technology-Youtube-Intro-3.png" alt="IMG-28 Old Hero Background">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-28 · Old Hero Medical Cross Banner</h3>
+              <p class="catalog-desc">Blue medical cross and stethoscope background used in the old hero banner.</p>
+              <div class="catalog-file">assets/old-site/Black-Dark-Blue-White-Modern-Futuristic-Technology-Youtube-Intro-3.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-29</span>
+              <img src="assets/old-site/medical-insurance-2021-04-03-16-32-08-utc.jpg" alt="IMG-29 Medical Stethoscope Banner">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-29 · Medical Checkup &amp; Stethoscope Photo</h3>
+              <p class="catalog-desc">Stock medical photo from the old website.</p>
+              <div class="catalog-file">assets/old-site/medical-insurance-2021-04-03-16-32-08-utc.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-30</span>
+              <img src="assets/old-site/filling-in-medical-form.jpg" alt="IMG-30 Filling in Medical Form">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-30 · Doctor Completing Medical Form</h3>
+              <p class="catalog-desc">Clipboard and stethoscope photo from old website.</p>
+              <div class="catalog-file">assets/old-site/filling-in-medical-form.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-31</span>
+              <img src="assets/old-site/icon_Artboard-1.png" alt="IMG-31 Icon Primary Healthcare">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-31 · Service Icon: Primary Healthcare</h3>
+              <p class="catalog-desc">Blue circle icon used for Primary Healthcare / Family Medicine.</p>
+              <div class="catalog-file">assets/old-site/icon_Artboard-1.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-32</span>
+              <img src="assets/old-site/icon_Artboard-2.png" alt="IMG-32 Icon IV Therapy">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-32 · Service Icon: IV Therapy</h3>
+              <p class="catalog-desc">Blue circle icon used for IV Therapy.</p>
+              <div class="catalog-file">assets/old-site/icon_Artboard-2.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-33</span>
+              <img src="assets/old-site/icon_Artboard-3_2.png" alt="IMG-33 Icon Medical Checkup">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-33 · Service Icon: Medical Checkup</h3>
+              <p class="catalog-desc">Blue circle icon used for Medical Checkup / Small Medical Services.</p>
+              <div class="catalog-file">assets/old-site/icon_Artboard-3_2.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-34</span>
+              <img src="assets/old-site/icon_Artboard-4.png" alt="IMG-34 Icon Wound Care">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-34 · Service Icon: Wound Care</h3>
+              <p class="catalog-desc">Blue circle icon used for Wound Care.</p>
+              <div class="catalog-file">assets/old-site/icon_Artboard-4.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-35</span>
+              <img src="assets/old-site/icon_Artboard-5.png" alt="IMG-35 Icon Blood Tests">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-35 · Service Icon: Blood Tests &amp; Aesthetic</h3>
+              <p class="catalog-desc">Blue circle icon used for Blood Tests / Aesthetic Treatments.</p>
+              <div class="catalog-file">assets/old-site/icon_Artboard-5.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-36</span>
+              <img src="assets/old-site/icon_Artboard-6.png" alt="IMG-36 Icon Palliative Care">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-36 · Service Icon: Palliative Care</h3>
+              <p class="catalog-desc">Blue circle icon used for Palliative Care.</p>
+              <div class="catalog-file">assets/old-site/icon_Artboard-6.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-37</span>
+              <img src="assets/old-site/home.png" alt="IMG-37 Icon Home Visits">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-37 · Service Icon: Home Visits</h3>
+              <p class="catalog-desc">Icon used for Home Visits &amp; Sonography Services.</p>
+              <div class="catalog-file">assets/old-site/home.png</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge">IMG-38</span>
+              <img src="assets/old-site/mental-health.png" alt="IMG-38 Icon Mental Health">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">IMG-38 · Service Icon: Mental Health Services</h3>
+              <p class="catalog-desc">Icon used for Mental Health Services.</p>
+              <div class="catalog-file">assets/old-site/mental-health.png</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CURRENT PLACEHOLDER IMAGES ON THE NEW SITE -->
+    <section class="catalog-section">
+      <div class="wrap">
+        <div class="catalog-header">
+          <h2>4. Current Website Placeholder Images (`dist/assets/`)</h2>
+          <p>These are the placeholder images currently displayed on the new layout so you can easily reference which slot you want to replace.</p>
+        </div>
+
+        <div class="catalog-grid">
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-01</span>
+              <img src="assets/hero-photo.webp" alt="CURR-01 Current Hero Image">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-01 · Current Home Hero Banner</h3>
+              <p class="catalog-desc">Currently used on Home page (`index.html`) Hero right side.</p>
+              <div class="catalog-file">assets/hero-photo.webp</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-02</span>
+              <img src="assets/doctor-photo.webp" alt="CURR-02 Current Doctor Photo">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-02 · Dr. Michael Le Roux (Home &amp; About Us)</h3>
+              <p class="catalog-desc">Currently used on Home About section and About Us bio.</p>
+              <div class="catalog-file">assets/doctor-photo.webp</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-03</span>
+              <img src="assets/doctor-michael.jpg" alt="CURR-03 Dr Michael Le Roux Team Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-03 · Team Card 1 (Dr. Michael Le Roux)</h3>
+              <p class="catalog-desc">Currently used on `team.html` for Dr. Michael Le Roux.</p>
+              <div class="catalog-file">assets/doctor-michael.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-04</span>
+              <img src="assets/doctor-danielle.jpg" alt="CURR-04 Dr Danielle Strydom Team Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-04 · Team Card 2 (Dr. Danielle Strydom)</h3>
+              <p class="catalog-desc">Currently used on `team.html` for Dr. Danielle Strydom.</p>
+              <div class="catalog-file">assets/doctor-danielle.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-05</span>
+              <img src="assets/doctor-rhiyaan.jpg" alt="CURR-05 Dr Rhiyaan Smith Team Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-05 · Team Card 3 (Dr. Rhiyaan Smith)</h3>
+              <p class="catalog-desc">Currently used on `team.html` for Dr. Rhiyaan Smith.</p>
+              <div class="catalog-file">assets/doctor-rhiyaan.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-06</span>
+              <img src="assets/doctors-procedure.jpg" alt="CURR-06 Doctors in Procedure Room">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-06 · Doctors in Procedure Room</h3>
+              <p class="catalog-desc">Dr. Rhiyaan Smith and Dr. Michael Le Roux in surgical gowns.</p>
+              <div class="catalog-file">assets/doctors-procedure.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-07</span>
+              <img src="assets/staff-4.jpg" alt="CURR-07 Jenna-lee Le Roux Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-07 · Staff Card 1 (Jenna-lee Le Roux)</h3>
+              <p class="catalog-desc">Currently used on `team.html` for Jenna-lee Le Roux (Practice Manager / Accounts).</p>
+              <div class="catalog-file">assets/staff-4.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-08</span>
+              <img src="assets/staff-2.jpg" alt="CURR-08 Everline Nanyama Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-08 · Staff Card 2 (Everline Nanyama)</h3>
+              <p class="catalog-desc">Currently used on `team.html` for Everline Nanyama (Practice Assistant).</p>
+              <div class="catalog-file">assets/staff-2.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-09</span>
+              <img src="assets/staff-1.jpg" alt="CURR-09 Megan Balters Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-09 · Staff Card 3 (Megan Balters)</h3>
+              <p class="catalog-desc">Currently used on `team.html` for Megan Balters (Receptionist).</p>
+              <div class="catalog-file">assets/staff-1.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-10</span>
+              <img src="assets/staff-3.jpg" alt="CURR-10 Marion Khakasa Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-10 · Staff Card 4 (Marion Khakasa)</h3>
+              <p class="catalog-desc">Currently used on `team.html` for Marion Khakasa (Housekeeping).</p>
+              <div class="catalog-file">assets/staff-3.jpg</div>
+            </div>
+          </article>
+
+          <article class="catalog-card">
+            <div class="catalog-thumb">
+              <span class="catalog-badge curr">CURR-11</span>
+              <img src="assets/staff-5.jpg" alt="CURR-11 Rochelle Pietersen Portrait">
+            </div>
+            <div class="catalog-body">
+              <h3 class="catalog-title">CURR-11 · Staff Card 5 (Rochelle Pietersen)</h3>
+              <p class="catalog-desc">Currently used on `team.html` for Rochelle Pietersen (Administration Assistant).</p>
+              <div class="catalog-file">assets/staff-5.jpg</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+<div class="footer-top wrap">
+<div class="footer-brand">
+<a class="logo" href="index.html" aria-label="Dr. Michael Le Roux — Family Medicine Specialist"><img class="logo-img" src="assets/logo.png" alt="Dr. Michael Le Roux — Family Medicine Specialist (Practice No.: 1202529 · MP No.: 0753840)" width="1024" height="433"></a>
+<p class="footer-desc">Personalised, comprehensive and compassionate medical care for individuals and families in Kuils River and surrounding areas.</p>
+</div>
+<div class="footer-col">
+<h4>Quick Links</h4>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="team.html">Our Team</a></li>
+<li><a href="services.html">Our Services</a></li>
+<li><a href="blog.html">Health &amp; Care Blog</a></li>
+<li><a href="index.html#reviews">Testimonials</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Our Services</h4>
+<ul>
+<li><a href="services.html">Primary Healthcare</a></li>
+<li><a href="services.html">IV Therapy</a></li>
+<li><a href="services.html">Family Medicine Specialist</a></li>
+<li><a href="services.html">Medical Checkup &amp; Blood Tests</a></li>
+<li><a href="services.html">Wound &amp; Palliative Care</a></li>
+<li><a href="services.html">Home Visits &amp; Sonography</a></li>
+</ul>
+</div>
+<div class="footer-col footer-contact">
+<h4>Contact &amp; Hours</h4>
+<ul>
+<li><svg aria-hidden="true"><use href="#pin"/></svg><span>21 Langverwacht Road, Klipdam, Kuils River, 7580</span></li>
+<li><svg aria-hidden="true"><use href="#phone"/></svg><a href="tel:+27219000970">021 900 0970</a> / <a href="https://wa.me/27735791601" target="_blank" rel="noopener">073 579 1601</a></li>
+<li><svg aria-hidden="true"><use href="#mail"/></svg><a href="mailto:reception@drmichaelleroux.co.za">reception@drmichaelleroux.co.za</a></li>
+<li><svg aria-hidden="true"><use href="#clock"/></svg><span>Mon–Fri: 08:00–17:00 | Sat: 08:00–12:00</span></li>
+</ul>
+<div class="social"><a href="https://www.facebook.com/profile.php?id=100089574591699" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#facebook"/></svg></a><a href="https://www.instagram.com/drmichaelleroux?igsh=ZGUwamc2bnR6Z2hs" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#instagram"/></svg></a><a href="https://wa.me/27735791601" target="_blank" rel="noopener" aria-label="WhatsApp"><svg aria-hidden="true"><use href="#whatsapp"/></svg></a></div>
+</div>
+</div>
+<div class="footer-bottom"><div class="wrap footer-bottom-inner"><p>© 2026 Dr. Michael Le Roux (Reg: 2023/564943/07 · VAT: 4460317035). All rights reserved.</p><div class="footer-legal"><a href="privacy-policy.html">Privacy Policy</a><span>•</span><a href="terms.html">Terms &amp; Conditions</a><span>•</span><a href="popia.html">POPI Act (POPIA)</a><span>•</span><a href="assets/old-site/PAIA-Manual-Dr-Michael-Le-Roux.pdf" target="_blank" rel="noopener">PAIA Manual (PDF)</a><span>•</span><a href="assets/old-site/Privacy-Policy-Dr-Michael-Le-Roux.pdf" target="_blank" rel="noopener">Privacy Form (PDF)</a><span>•</span><a href="images.html">Image Library</a></div></div></div>
+</footer>
+</div>
+<button class="floating-whatsapp-ai" data-whatsapp-ai aria-label="Chat on WhatsApp &amp; Open Doc Assist FAQs"><svg aria-hidden="true"><use href="#whatsapp"/></svg><span>WhatsApp</span></button>
+<dialog id="details"><button class="close" aria-label="Close dialog"><svg aria-hidden="true"><use href="#close"/></svg></button><div id="dialog-content"></div></dialog>
+<script src="app.js"></script>
+</body>
+</html>

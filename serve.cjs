@@ -1,0 +1,4 @@
+const http=require('http'),fs=require('fs'),path=require('path');
+const root=path.join(__dirname,'dist');
+const port=Number(process.env.PORT)||3001;
+http.createServer((req,res)=>{const name=decodeURIComponent(req.url.split('?')[0]);let file=path.resolve(root,'.'+(name==='/'?'/index.html':name));if(!file.startsWith(root+path.sep)){res.writeHead(403);return res.end();}fs.readFile(file,(err,data)=>{if(err){res.writeHead(404);return res.end('Not found');}const type={'.html':'text/html','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.woff2':'font/woff2','.txt':'text/plain','.pdf':'application/pdf'}[path.extname(file)]||'application/octet-stream';res.writeHead(200,{'Content-Type':type});res.end(data);});}).listen(port,()=>console.log(`Local: http://localhost:${port}`));

@@ -8,7 +8,7 @@ const services=[
  ['Palliative Care','Compassionate support to enhance quality of life for serious illnesses.'],
  ['Aesthetic Treatments','Safe, effective treatments to restore confidence and promote healthy, radiant skin.']
 ];
-const serviceIcons=["stethoscope","syringe","users","heart-pulse","bandage","syringe","hands","sparkles"];
+const serviceIcons=["stethoscope","syringe","users","heart-pulse","bandage","syringe","hands","heart"];
 const serviceGrid=document.querySelector('#service-grid');
 if(serviceGrid) serviceGrid.innerHTML=services.map(([name,description],i)=>`<button class="service-card" data-service="${i}" aria-label="Learn about ${name}"><div class="service-photo-wrap"><img class="service-photo" src="assets/service-${i}.jpg" alt="${name}" width="640" height="360" loading="lazy"></div><div class="service-card-body"><div class="card-title"><span class="service-icon"><svg aria-hidden="true"><use href="#${serviceIcons[i]}"/></svg></span><h3>${name}</h3></div><p>${description}</p></div></button>`).join('');
 

@@ -10,7 +10,20 @@ const services=[
 ];
 const serviceIcons=["stethoscope","syringe","users","heart-pulse","bandage","syringe","hands","heart"];
 const serviceGrid=document.querySelector('#service-grid');
-if(serviceGrid) serviceGrid.innerHTML=services.map(([name,description],i)=>`<button class="service-card" data-service="${i}" aria-label="Learn about ${name}"><div class="service-photo-wrap"><img class="service-photo" src="assets/service-${i}.jpg" alt="${name}" width="640" height="360" loading="lazy"></div><div class="service-card-body"><div class="card-title"><span class="service-icon"><svg aria-hidden="true"><use href="#${serviceIcons[i]}"/></svg></span><h3>${name}</h3></div><p>${description}</p></div></button>`).join('');
+const MOBILE_HIDDEN_FROM=6;
+if(serviceGrid) serviceGrid.innerHTML=services.map(([name,description],i)=>`<button class="service-card${i>=MOBILE_HIDDEN_FROM?' hidden-mobile':''}" data-service="${i}" aria-label="Learn about ${name}"><div class="service-photo-wrap"><img class="service-photo" src="assets/service-${i}.jpg" alt="${name}" width="640" height="360" loading="lazy"></div><div class="service-card-body"><div class="card-title"><span class="service-icon"><svg aria-hidden="true"><use href="#${serviceIcons[i]}"/></svg></span><h3>${name}</h3></div><p>${description}</p></div></button>`).join('');
+// Mobile "View More" button for services
+(function(){
+ const btn=document.getElementById('service-view-more-btn');
+ if(!btn) return;
+ btn.addEventListener('click',function(){
+  const hidden=serviceGrid?serviceGrid.querySelectorAll('.service-card.hidden-mobile'):[];
+  hidden.forEach(function(card){card.classList.add('revealed');});
+  const wrap=document.getElementById('service-grid-wrap');
+  if(wrap) wrap.classList.remove('collapsed');
+  btn.closest('.service-view-more-wrap').style.display='none';
+ });
+})();
 
 const blogArticles={
  'iv-therapy-guide':{
@@ -672,22 +685,107 @@ if(closeDialogBtn&&dialog){
 }
 const toggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#main-nav');
 if(toggle&&nav){
+ const headerEl=nav.closest('.header');
+ let backdrop=document.querySelector('.nav-backdrop');
+ if(!backdrop){
+  backdrop=document.createElement('div');
+  backdrop.className='nav-backdrop';
+  backdrop.setAttribute('aria-hidden','true');
+  if(headerEl){
+   headerEl.insertBefore(backdrop,nav);
+  }else{
+   document.body.appendChild(backdrop);
+  }
+ }
+
+ if(!nav.querySelector('.mobile-drawer-head')){
+  const existingLinks=Array.from(nav.querySelectorAll(':scope > a, :scope > button'));
+  const linksWrap=document.createElement('div');
+  linksWrap.className='mobile-drawer-links';
+  existingLinks.forEach(link=>{
+   linksWrap.appendChild(link);
+  });
+
+  const drawerHead=document.createElement('div');
+  drawerHead.className='mobile-drawer-head';
+  drawerHead.innerHTML=`
+   <a class="mobile-drawer-logo" href="index.html" aria-label="Dr. Michael Le Roux — Family Medicine Specialist">
+    <img src="assets/logo.png" alt="Dr. Michael Le Roux" width="1024" height="433">
+   </a>
+   <button type="button" class="mobile-drawer-close" aria-label="Close navigation">
+    <svg aria-hidden="true"><use href="#close"/></svg>
+   </button>
+  `;
+
+  const drawerFooter=document.createElement('div');
+  drawerFooter.className='mobile-drawer-footer';
+  drawerFooter.innerHTML=`
+   <button type="button" class="button mobile-drawer-book" data-book>
+    <svg aria-hidden="true"><use href="#calendar"/></svg>
+    <span>Book an Appointment</span>
+   </button>
+   <div class="mobile-drawer-socials">
+    <p class="mobile-drawer-socials-title">Follow &amp; Connect With Us</p>
+    <div class="mobile-drawer-social-links">
+     <a href="https://www.facebook.com/profile.php?id=100089574591699" target="_blank" rel="noopener" aria-label="Facebook">
+      <svg aria-hidden="true"><use href="#facebook"/></svg>
+      <span>Facebook</span>
+     </a>
+     <a href="https://www.instagram.com/drmichaelleroux?igsh=ZGUwamc2bnR6Z2hs" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg aria-hidden="true"><use href="#instagram"/></svg>
+      <span>Instagram</span>
+     </a>
+     <a href="https://wa.me/27735791601" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg aria-hidden="true"><use href="#whatsapp"/></svg>
+      <span>WhatsApp</span>
+     </a>
+    </div>
+   </div>
+  `;
+
+  nav.innerHTML='';
+  nav.appendChild(drawerHead);
+  nav.appendChild(linksWrap);
+  nav.appendChild(drawerFooter);
+ }
+
  const updateMenuIcon=open=>{
   const useEl=toggle.querySelector('use');
   if(useEl) useEl.setAttribute('href',open?'#close':'#menu');
  };
- toggle.addEventListener('click',()=>{
-  const open=nav.classList.toggle('open');
+
+ const setMenuOpen=open=>{
+  nav.classList.toggle('open',open);
+  backdrop.classList.toggle('open',open);
+  headerEl?.classList.toggle('nav-is-open',open);
+  document.body.classList.toggle('mobile-menu-open',open);
   toggle.setAttribute('aria-expanded',String(open));
   toggle.setAttribute('aria-label',open?'Close navigation':'Open navigation');
   updateMenuIcon(open);
+ };
+
+ toggle.addEventListener('click',()=>{
+  const open=!nav.classList.contains('open');
+  setMenuOpen(open);
  });
+
+ backdrop.addEventListener('click',()=>{
+  setMenuOpen(false);
+ });
+
  nav.addEventListener('click',e=>{
-  if(e.target.closest('a,button')){
-   nav.classList.remove('open');
-   toggle.setAttribute('aria-expanded','false');
-   toggle.setAttribute('aria-label','Open navigation');
-   updateMenuIcon(false);
+  if(e.target.closest('.mobile-drawer-close')){
+   setMenuOpen(false);
+   return;
+  }
+  if(e.target.closest('a, button[data-book]')){
+   setMenuOpen(false);
+  }
+ });
+
+ document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&nav.classList.contains('open')){
+   setMenuOpen(false);
   }
  });
 }

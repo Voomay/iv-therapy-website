@@ -280,6 +280,8 @@ em { font-style: normal; color: var(--blue); }
 
 /* Services Section */
 .services { padding-top: 3.4rem; padding-bottom: 3.2rem; }
+/* "View More Services" is a mobile-only control; enabled in the 640px media query below */
+.service-view-more-wrap { display: none; }
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -3224,7 +3226,6 @@ dialog svg { width: 16px; height: 16px; }
     pointer-events: none;
   }
   .service-view-more-btn {
-    display: none;
     margin: .75rem auto 0;
     padding: .65rem 1.6rem;
     background: #fff;
@@ -3239,7 +3240,6 @@ dialog svg { width: 16px; height: 16px; }
   }
   .service-view-more-btn:hover { background: #eaf3ff; border-color: #a6ccf0; }
   .service-view-more-wrap {
-    display: none;
     text-align: center;
   }
 

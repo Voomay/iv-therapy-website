@@ -396,7 +396,7 @@ em { font-style: normal; color: var(--blue); }
 .about-values {
   list-style: none;
   margin: 0 0 0 auto;
-  margin-right: 26%;
+  margin-right: 32%;
   padding: 1.75rem 1.7rem;
   background: #fffffffa;
   border: 1px solid #dbeaf9;
@@ -3094,8 +3094,9 @@ dialog svg { width: 16px; height: 16px; }
     height: 1.3rem;
   }
 
-  .about-visual { position: relative; order: 2; z-index: 0; width: 94%; height: 260px; margin: 0 auto 1.5rem; border-radius: 12px; overflow: hidden; }
+  .about-visual { position: relative; order: 2; z-index: 0; width: 94%; height: auto; aspect-ratio: 1131 / 958; max-height: 380px; margin: 0 auto 1.5rem; border-radius: 12px; overflow: hidden; }
   .about-visual:after { display: none; }
+  .doctor-photo { object-fit: cover; object-position: center; }
   .booking > .wrap { display: flex; flex-direction: column; align-items: flex-start; gap: 0; }
   .booking-bottom { display: flex; flex-direction: column; align-items: flex-start; width: 100%; gap: 1.5rem; }
   .booking-values { margin-top: .5rem; width: 100%; max-width: 34rem; gap: 1.25rem 1.8rem; }
@@ -3342,7 +3343,7 @@ dialog svg { width: 16px; height: 16px; }
     height: 1.2rem;
   }
 
-  .about-visual { position: relative; order: 2; z-index: 0; width: 92%; height: 220px; margin: 0 auto 18px; border-radius: 10px; overflow: hidden; }
+  .about-visual { position: relative; order: 2; z-index: 0; width: 92%; height: auto; aspect-ratio: 1131 / 958; max-height: 380px; margin: 0 auto 18px; border-radius: 10px; overflow: hidden; }
   .about-visual:after { display: none; }
   .profile-photo { min-height: 18rem; }
   .profile-photo > img { height: 100%; }

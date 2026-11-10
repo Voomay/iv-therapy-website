@@ -2946,13 +2946,13 @@ dialog svg { width: 16px; height: 16px; }
     padding: 20px 18px 14px;
     width: 100%;
   }
-  .mobile-drawer-links a,
-  .mobile-drawer-links button {
+  .header nav .mobile-drawer-links a,
+  .header nav .mobile-drawer-links button {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 13px 15px;
+    padding: 14px 18px;
     background: #f5f9ff;
     border: 1px solid #e1eefb;
     border-radius: 10px;
